@@ -2,10 +2,12 @@
 {% block body %}
 <h2>result page</h2>
 <ul>
-    <li>No.{{id}}</li>
-    <dd>Name:{{name}}</dd>
-    <dd>Question1 result:{{q1_result}}</dd>
-    <dd>Question2 result:{{q2_result}}</dd>
-    <dd>Question3 result:{{q3_result}}</dd>   
+    {% for data in result_data %}
+        <li>{{ data.id }}</li>
+        <dd>name:{{ data.name|safe }}</dd>
+        <dd>Question1 result:{{data.q1_result|safe}}</dd>
+        <dd>Question2 result:{{data.q2_result|safe}}</dd>
+        <dd>Question3 result:{{data.q3_result|safe}}</dd>   
+    {% endfor %}
 </ul>
 {% endblock %}
