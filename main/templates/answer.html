@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+{% block body %}
+<h2>answer page</h2>
+<form action="{{ url_for('import_result') }}" method=post>
+<ul>
+    <li><p>Question 1</p></li>
+    <li>元気ですか？</li>
+    <dd>
+        <input type="radio" name="q1_radio" id= "q1_first" value="1">
+        <label for="q1_first">1</label>
+        <input type="radio" name="q1_radio" id= "q1_secound" value="2">
+        <label for="q1_secound">2</label>
+        <input type="radio" name="q1_radio" id= "q1_third" value="3">
+        <label for="q1_third">3</label>
+        <input type="radio" name="q1_radio" id= "q1_fourth" value="4">
+        <label for="q1_fourth">4</label>
+        <input type="radio" name="q1_radio" id= "q1_fifth" value="5">
+        <label for="q1_fifth">5</label>
+    </dd>
+    <li><p>Question 2</p></li>
+    <li>健康ですか？</li>
+    <dd>
+        <input type="radio" name="q2_radio" id= "q2_first" value="1">
+        <label for="q2_first">1</label>
+        <input type="radio" name="q2_radio" id= "q2_secound" value="2">
+        <label for="q2_secound">2</label>
+        <input type="radio" name="q2_radio" id= "q2_third" value="3">
+        <label for="q2_third">3</label>
+        <input type="radio" name="q2_radio" id= "q2_fourth" value="4">
+        <label for="q2_fourth">4</label>
+        <input type="radio" name="q2_radio" id= "q2_fifth" value="5">
+        <label for="q2_fifth">5</label>
+    </dd>
+    <li><p>Question 3</p></li>
+    <li>気分はいかがですか？</li>
+    <dd>
+        <input type="radio" name="q3_radio" id= "q3_first" value="1">
+        <label for="q3_first">1</label>
+        <input type="radio" name="q3_radio" id= "q3_secound" value="2">
+        <label for="q3_secound">2</label>
+        <input type="radio" name="q3_radio" id= "q3_third" value="3">
+        <label for="q3_third">3</label>
+        <input type="radio" name="q3_radio" id= "q3_fourth" value="4">
+        <label for="q3_fourth">4</label>
+        <input type="radio" name="q3_radio" id= "q3_fifth" value="5">
+        <label for="q3_fifth">5</label>
+    </dd>
+</ul>
+    <input type="submit" value="submit">
+</form>
+{% endblock %}

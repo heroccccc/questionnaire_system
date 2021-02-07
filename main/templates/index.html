@@ -1,0 +1,7 @@
+{% extends "layout.html" %}
+{% block body %}
+<h2>main page</h2>
+<form  action="{{ url_for('answer_question') }}" method=get>
+    <input type="submit" value="Question">
+</form>
+{% endblock %}
