@@ -2,9 +2,9 @@
 {% block body %}
 <h2>main page</h2>
 <form  action="{{ url_for('answer_question') }}" method=get>
-    <input type="submit" value="Question">
+    <input type="submit" class="btn btn-primary" value="Question">
 </form>
 <form  action="{{ url_for('show_result') }}" method=get>
-    <input type="submit" value="Result">
+    <input type="submit" class="btn btn btn-success" value="Result">
 </form>
 {% endblock %}
